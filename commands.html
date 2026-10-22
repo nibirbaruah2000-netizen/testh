@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All 75 Fourthnight slash commands, grouped by category.">
+  <title>Commands · Fourthnight</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">F</span>Fourthnight</a>
+    <nav class="nav-links" aria-label="Main">
+        <a href="index.html" class="">Home</a>
+        <a href="features.html" class="">Features</a>
+        <a href="commands.html" class="active">Commands</a>
+        <a href="download.html" class="">Download</a>
+        <a href="changelog.html" class="">Changelog</a>
+        <a href="privacy.html" class="">Privacy</a>
+      <a href="#" data-invite class="nav-cta">Add to Discord</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Commands</span>
+    <h1>All 75 commands</h1>
+    <p>Type <code>/help</code> in any server to see the list the bot is running.</p>
+  </div>
+</section>
+<section style="padding-top:20px">
+  <div class="container">
+    <input id="cmd-search" class="search" type="search" placeholder="Search commands…" aria-label="Search commands">
+    <div class="cmd-group">
+      <h2>Moderation</h2>
+      <p>Core moderation with case logging. Requires the matching Discord permission or the mod role.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/kick</code><span>Kick a member from the server.</span></div>
+        <div class="cmd"><code>/ban</code><span>Ban a user from the server.</span></div>
+        <div class="cmd"><code>/unban</code><span>Unban a user by their ID.</span></div>
+        <div class="cmd"><code>/timeout</code><span>Temporarily stop a member from chatting.</span></div>
+        <div class="cmd"><code>/untimeout</code><span>Remove a member&#x27;s timeout.</span></div>
+        <div class="cmd"><code>/warn</code><span>Warn a member. Thresholds may trigger automatic action.</span></div>
+        <div class="cmd"><code>/warnings</code><span>List a member&#x27;s active warnings.</span></div>
+        <div class="cmd"><code>/clearwarnings</code><span>Clear all active warnings for a member.</span></div>
+        <div class="cmd"><code>/purge</code><span>Bulk delete recent messages in this channel.</span></div>
+        <div class="cmd"><code>/slowmode</code><span>Set the slowmode delay for this channel.</span></div>
+        <div class="cmd"><code>/lock</code><span>Stop everyone from sending messages in this channel.</span></div>
+        <div class="cmd"><code>/unlock</code><span>Allow messages again in this channel.</span></div>
+        <div class="cmd"><code>/case</code><span>Show a moderation case by number.</span></div>
+        <div class="cmd"><code>/cases</code><span>List recent moderation cases for a member.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Moderation extras</h2>
+      <p>Nicknames, warning removal and softbans.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/nick</code><span>Change or reset a member&#x27;s nickname.</span></div>
+        <div class="cmd"><code>/removewarn</code><span>Remove one specific warning by its ID.</span></div>
+        <div class="cmd"><code>/softban</code><span>Ban and immediately unban a member to clear their recent messages.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Server configuration</h2>
+      <p>Requires the Manage Server permission.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/config show</code><span>Show this server&#x27;s current settings.</span></div>
+        <div class="cmd"><code>/config modrole</code><span>Set the role that can use moderation commands.</span></div>
+        <div class="cmd"><code>/config logchannel</code><span>Set where moderation cases are posted.</span></div>
+        <div class="cmd"><code>/config thresholds</code><span>Set how many warnings trigger automatic punishments.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>AntiNuke</h2>
+      <p>Protection against mass destructive actions. Requires Manage Server.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/antinuke status</code><span>Show AntiNuke settings.</span></div>
+        <div class="cmd"><code>/antinuke toggle</code><span>Turn AntiNuke on or off.</span></div>
+        <div class="cmd"><code>/antinuke threshold</code><span>Set how many actions trigger AntiNuke, and within how long.</span></div>
+        <div class="cmd"><code>/antinuke punishment</code><span>Choose strip (remove dangerous roles) or ban.</span></div>
+        <div class="cmd"><code>/antinuke allow</code><span>Exempt a user from AntiNuke.</span></div>
+        <div class="cmd"><code>/antinuke disallow</code><span>Remove a user&#x27;s AntiNuke exemption.</span></div>
+        <div class="cmd"><code>/antinuke allowlist</code><span>List users exempt from AntiNuke.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Economy</h2>
+      <p>Earn, spend and move coins. Balances are shared across every server.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/balance</code><span>Check your coins and bank balance.</span></div>
+        <div class="cmd"><code>/daily</code><span>Claim your daily coins.</span></div>
+        <div class="cmd"><code>/weekly</code><span>Claim your weekly coins.</span></div>
+        <div class="cmd"><code>/work</code><span>Work a job to earn coins. Cooldown: 1 hour.</span></div>
+        <div class="cmd"><code>/pay</code><span>Send coins to another member.</span></div>
+        <div class="cmd"><code>/deposit</code><span>Move coins from your wallet into the bank.</span></div>
+        <div class="cmd"><code>/withdraw</code><span>Move coins from the bank into your wallet.</span></div>
+        <div class="cmd"><code>/rob</code><span>Try to steal coins from a member. Risky. Cooldown: 1 hour.</span></div>
+        <div class="cmd"><code>/leaderboard</code><span>Show the richest users across all servers.</span></div>
+        <div class="cmd"><code>/profile</code><span>Show a user&#x27;s economy profile.</span></div>
+        <div class="cmd"><code>/setbio</code><span>Set the bio shown on your profile.</span></div>
+        <div class="cmd"><code>/rep</code><span>Give a member a reputation point. Once per day.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Shop and trading</h2>
+      <p>Buy, sell and trade items. Any server&#x27;s shop works from any server.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/shop</code><span>Browse a server&#x27;s shop.</span></div>
+        <div class="cmd"><code>/buy</code><span>Buy an item from any server&#x27;s shop by its ID.</span></div>
+        <div class="cmd"><code>/sell</code><span>Sell an item back for half its shop price.</span></div>
+        <div class="cmd"><code>/inventory</code><span>See the items you own.</span></div>
+        <div class="cmd"><code>/trade</code><span>Offer an item to another member, for coins or free.</span></div>
+        <div class="cmd"><code>/eco give</code><span>Give coins to a user. Requires Administrator.</span></div>
+        <div class="cmd"><code>/eco take</code><span>Take coins from a user. Requires Administrator.</span></div>
+        <div class="cmd"><code>/shopadmin additem</code><span>Add an item to this server&#x27;s shop.</span></div>
+        <div class="cmd"><code>/shopadmin removeitem</code><span>Remove an item from this server&#x27;s shop.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Fun</h2>
+      <p>Games and social commands.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/coinflip</code><span>Flip a coin.</span></div>
+        <div class="cmd"><code>/dice</code><span>Roll one or more dice.</span></div>
+        <div class="cmd"><code>/rps</code><span>Play rock, paper, scissors against the bot.</span></div>
+        <div class="cmd"><code>/eightball</code><span>Ask the magic 8-ball a question.</span></div>
+        <div class="cmd"><code>/slots</code><span>Spin the slot machine. Costs coins to play.</span></div>
+        <div class="cmd"><code>/choose</code><span>Let the bot pick one option from a list.</span></div>
+        <div class="cmd"><code>/ship</code><span>Calculate compatibility between two members.</span></div>
+        <div class="cmd"><code>/rate</code><span>Rate anything out of 10.</span></div>
+        <div class="cmd"><code>/hug</code><span>Hug a member.</span></div>
+        <div class="cmd"><code>/pat</code><span>Give a member headpats.</span></div>
+        <div class="cmd"><code>/slap</code><span>Slap a member. Playfully.</span></div>
+        <div class="cmd"><code>/roast</code><span>Playfully roast a member.</span></div>
+        <div class="cmd"><code>/compliment</code><span>Compliment a member.</span></div>
+        <div class="cmd"><code>/fact</code><span>Get a random fact.</span></div>
+        <div class="cmd"><code>/joke</code><span>Get a random joke.</span></div>
+      </div>
+    </div>
+    <div class="cmd-group">
+      <h2>Utility</h2>
+      <p>Information, polls, reminders and help.</p>
+      <div class="cmd-list">
+        <div class="cmd"><code>/ping</code><span>Check the bot&#x27;s response time.</span></div>
+        <div class="cmd"><code>/userinfo</code><span>Show information about a member.</span></div>
+        <div class="cmd"><code>/serverinfo</code><span>Show information about this server.</span></div>
+        <div class="cmd"><code>/avatar</code><span>Show a user&#x27;s avatar.</span></div>
+        <div class="cmd"><code>/poll</code><span>Create a poll with up to three options.</span></div>
+        <div class="cmd"><code>/remindme</code><span>Get a reminder in this channel after some minutes.</span></div>
+        <div class="cmd"><code>/say</code><span>Make the bot say something in this channel.</span></div>
+        <div class="cmd"><code>/uptime</code><span>Show how long the bot has been running.</span></div>
+        <div class="cmd"><code>/help</code><span>List all commands.</span></div>
+        <div class="cmd"><code>/invite</code><span>Get the link to add this bot to another server.</span></div>
+        <div class="cmd"><code>/botstats</code><span>Show bot statistics.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark">F</span>Fourthnight</div>
+      <p class="watermark">Fourthnight Open-source, Devloped by NimbleFlea8613</p>
+    </div>
+    <div class="footer-links">
+      <a href="features.html">Features</a>
+      <a href="commands.html">Commands</a>
+      <a href="download.html">Download</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/NimbleFlea8613" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

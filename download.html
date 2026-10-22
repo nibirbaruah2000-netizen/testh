@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download the latest Fourthnight release or add the bot to your server.">
+  <title>Download · Fourthnight</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">F</span>Fourthnight</a>
+    <nav class="nav-links" aria-label="Main">
+        <a href="index.html" class="">Home</a>
+        <a href="features.html" class="">Features</a>
+        <a href="commands.html" class="">Commands</a>
+        <a href="download.html" class="active">Download</a>
+        <a href="changelog.html" class="">Changelog</a>
+        <a href="privacy.html" class="">Privacy</a>
+      <a href="#" data-invite class="nav-cta">Add to Discord</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Download</span>
+    <h1>Get Fourthnight</h1>
+    <p>Use the bot in your server, or download the source code and host it yourself.</p>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="version-card">
+      <div class="label">Latest version</div>
+      <div class="big">Fourthnight <span data-version>6.0</span></div>
+      <p style="color:var(--muted)">Build <span data-build>v6</span> · Released <span data-released>2026-10-19</span></p>
+      <ul>
+        <li>Open-source attribution line in /help and /botstats</li>
+        <li>AntiNuke: mass channel/role delete, ban, kick and webhook protection</li>
+        <li>Global economy shared across every server</li>
+        <li>75 slash commands</li>
+      </ul>
+      <a href="downloads/Fourthnightv6-watermarked.zip" data-download class="btn btn-primary" download>Download source (.zip)</a>
+      <a href="#" data-invite class="btn btn-ghost" style="margin-left:8px">Add to Discord</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Self-hosting</span>
+      <h2>Run it on your own machine</h2>
+      <p>You'll need Python 3.11+ and a Discord bot token from the Developer Portal.</p>
+    </div>
+    <ol class="steps">
+      <li>Extract the zip and open a terminal in the <code>discord_bot</code> folder.</li>
+      <li>Run <code>pip install -r requirements.txt</code>.</li>
+      <li>Copy <code>.env.example</code> to <code>.env</code> and add your <code>DISCORD_TOKEN</code>.</li>
+      <li>First run only: <code>SYNC_COMMANDS=true python main.py</code>, then start normally with <code>python main.py</code>.</li>
+    </ol>
+    <p style="text-align:center;color:var(--muted);margin-top:28px">For Docker, see the README included in the zip.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark">F</span>Fourthnight</div>
+      <p class="watermark">Fourthnight Open-source, Devloped by NimbleFlea8613</p>
+    </div>
+    <div class="footer-links">
+      <a href="features.html">Features</a>
+      <a href="commands.html">Commands</a>
+      <a href="download.html">Download</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/NimbleFlea8613" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
