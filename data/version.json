@@ -1,0 +1,13 @@
+{
+  "name": "Fourthnight",
+  "version": "6.0",
+  "build": "v6",
+  "file": "downloads/Fourthnightv6-watermarked.zip",
+  "released": "2026-10-19",
+  "highlights": [
+    "Open-source attribution line in /help and /botstats",
+    "AntiNuke: protects against mass channel/role deletes, bans, kicks, and webhook spam",
+    "Global economy shared across every server",
+    "75 slash commands"
+  ]
+}
