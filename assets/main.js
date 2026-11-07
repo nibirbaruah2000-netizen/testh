@@ -6,7 +6,7 @@ if (toggle && links) {
 }
 
 // Bot invite link. Replace with your application's Client ID from the Developer Portal.
-const CLIENT_ID = "1537424885230608425";
+const CLIENT_ID = "1561389054673555537";
 const INVITE_PERMISSIONS = [
   "kick_members", "ban_members", "moderate_members", "manage_messages",
   "manage_channels", "manage_nicknames", "manage_roles", "view_audit_log",
